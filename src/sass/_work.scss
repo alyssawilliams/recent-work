@@ -1,18 +1,21 @@
-.main-wrapper {
+// MAIN WRAPPER
+main {
   margin-top: 25px;
   padding: 0 20px;
   @include center('col');
 }
 
 // HEADER
-.heading {
-  text-align: center;
+header {
+  .content {
+    text-align: center;
 
-  @media only screen and (min-width: $desktop) {
-    @include center();
+    @media only screen and (min-width: $desktop) {
+      @include center();
+    }
   }
-  
-  .header {
+
+  .heading {
     font-size: 1em;
     line-height: 0.9;
     letter-spacing: 3.9px;
@@ -41,19 +44,20 @@
     @media only screen and (min-width: $desktop) {
       order: 1;
     }
-  }
 
-  .bold {
-    font-weight: 600;
+    .bold {
+      font-weight: 600;
+    }
   }
 }
 
 // FOOTER
 footer {
-  .social-icon-container {
+  & {
     width: 100%;
     @include center();
   }
+
   .social-icon {
     width: 50px;
     margin: 0 20px;
