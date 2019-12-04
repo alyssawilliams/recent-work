@@ -31,3 +31,6 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', gulp.series('sass', 'watch'));
+
+// Build command for Netlify deploy
+gulp.task('build', gulp.series('sass'));
