@@ -1,8 +1,10 @@
 .main-wrapper {
-  padding: 50px 20px;
-  @include center();
+  margin-top: 25px;
+  padding: 0 20px;
+  @include center('col');
 }
 
+// HEADER
 .heading {
   text-align: center;
 
@@ -43,5 +45,17 @@
 
   .bold {
     font-weight: 600;
+  }
+}
+
+// FOOTER
+footer {
+  .social-icon-container {
+    width: 100%;
+    @include center();
+  }
+  .social-icon {
+    width: 50px;
+    margin: 0 20px;
   }
 }
