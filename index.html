@@ -2,14 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alyssa Williams / Web Developer</title>
-  <link rel="stylesheet" type="text/css" href="dist/styles.css"></script>
   <link rel="shortcut icon" href="seedling.ico" />
+    
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-grid.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+
+  <!-- Browser resets -->
+  <link rel="stylesheet" type="text/css" href="dist/reset.css"></script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" type="text/css" href="dist/styles.css"></script>
+  
 </head>
 <body>
-  <div class="main-wrapper">
-    <h1 class="header main">Recent Work</h1>
-    <p class="bio">Hi, my name is Alyssa Williams. I am a New York City based developer with 5 years of experience building web sites and web applications. My passions are writing clean code, delivering precise recreations of mockups, and continually striving to learn more and improve my skills! Here are some projects that I have worked on recently.</p>
+  <div class="container main-wrapper">
+    <header class="row">
+      <div class="heading col-xs-1">
+        <h1 class="header main col-xl-6">Recent <span class="work">Work</span></h1>
+        <p class="bio col-xl-6">Hi, my name is <span class="bold">Alyssa Williams</span>. I am a New York City based <span class="bold">developer</span> with <span class="bold">5 years</span> of experience building web sites and web applications. My passions are writing clean code, delivering precise recreations of mockups, and continually striving to learn more and improve my skills! Here are some projects that I have worked on recently.</p>
+      </div>
+    </header>
   </div>
 </body>
 </html>

@@ -1,0 +1,47 @@
+.main-wrapper {
+  padding: 50px 20px;
+  @include center();
+}
+
+.heading {
+  text-align: center;
+
+  @media only screen and (min-width: $desktop) {
+    @include center();
+  }
+  
+  .header {
+    font-size: 1em;
+    line-height: 0.9;
+    letter-spacing: 3.9px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    @media only screen and (min-width: $desktop) {
+      margin-bottom: 0;
+      order: 2;
+      font-size: 2em;
+      @include center('col');
+    }
+  }
+
+  .work {
+    font-size: 3.052em;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: $leaf-green;
+    display: block;
+  }
+
+  .bio {
+    line-height: 1.5;
+
+    @media only screen and (min-width: $desktop) {
+      order: 1;
+    }
+  }
+
+  .bold {
+    font-weight: 600;
+  }
+}
